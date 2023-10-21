@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe na [empresa tal]</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Candidatura a uma Vaga de Emprego</h1>
+    </header>
+    <main>
+        <form class="basicinfo">
+            <label for="nomec">Nome completo:</label>
+            <input type="text" name="nome" id="nome" required> <br><br>
+            <label for="email">Seu e-mail:</label>
+            <input type="email" placeholder="meuemail@email.dominio" name="email" id="email" required> <br><br>
+            <label for="fone">Telefone:</label>
+            <input type="tel" placeholder="(00)00000-0000" name="telefone" id="telefone" maxlength="11" required> <br><br>
+
+            <p>Escolha o cargo desejado:</p>
+            <input type="radio" name="cargodesejado" id="devwcheck">
+            <label for="devweb">Desenvolvedor Web</label> <br>
+            <input type="radio" name="cargodesejado" id="dsciencecheck">
+            <label for="datascience">Data science</label> <br>
+            <input type="radio" name="cargodesejado" id="descheck">
+            <label for="design">Designer</label> <br>
+
+            <p>Escolha a cidade:</p>
+            <select name="cidade" id="cidade">
+                <option value="POA">Porto Alegre</option>
+                <option value="SSCAI">São Sebastião do Caí</option>
+                <option value="EV">Estância Velha</option>
+                <option value="CA">Canoas</option>
+            </select>
+
+            <p>Currículo (PDF):</p>
+            <input type="file" name="curriculo" id="curriculo">
+
+            <p>Mensagem:</p>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+</body>
+</html>
